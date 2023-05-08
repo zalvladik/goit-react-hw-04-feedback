@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import {SectionDiv,SectionTitle} from './SectionStyled'
 
 const Section = ({title,children}) =>{
-    console.log('Section')
     return (
         <SectionDiv>
             <SectionTitle>{title}</SectionTitle>
