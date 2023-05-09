@@ -13,14 +13,11 @@ const NewApp = () =>{
     
     switch(e.target.getAttribute('data-option')){
       case 'good':
-        setGood(good + 1);
-        break;
+        return setGood(good + 1);
       case 'neutral':
-        setNeutral(neutral + 1);
-        break;
+        return setNeutral(neutral + 1);
       case 'bad':
-        setBad(bad + 1);
-          break;
+        return setBad(bad + 1);
       default:
         return
     }
