@@ -9,8 +9,9 @@ const NewApp = () =>{
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
   
-  const onLeaveFeedback = e => {    
-    switch(e.target.textContent){
+  const onLeaveFeedback = e => {   
+    
+    switch(e.target.getAttribute('data-option')){
       case 'good':
         setGood(good + 1);
         break;
